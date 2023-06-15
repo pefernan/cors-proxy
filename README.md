@@ -1,4 +1,8 @@
-# @isomorphic-git/cors-proxy
+# @pefernan/cors-proxy
+
+Forked from https://github.com/isomorphic-git/cors-proxy fixing security issues 
+
+
 
 This is the software running on https://cors.isomorphic-git.org/ -
 a free service (generously sponsored by [Clever Cloud](https://www.clever-cloud.com/?utm_source=ref&utm_medium=link&utm_campaign=isomorphic-git))
@@ -10,7 +14,7 @@ Namely, it blocks requests that don't look like valid git requests.
 ## Installation
 
 ```sh
-npm install @isomorphic-git/cors-proxy
+npm install @pefernan/cors-proxy
 ```
 
 ## CLI usage

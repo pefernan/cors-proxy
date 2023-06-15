@@ -1,6 +1,6 @@
 const express = require('express')
-const corsProxy = require('@isomorphic-git/cors-proxy/middleware.js')
-const service = require('@isomorphic-git/cors-proxy')
+const corsProxy = require('@pefernan/cors-proxy/middleware.js')
+const service = require('@pefernan/cors-proxy')
 
 const port = 3000
 const options = {
