@@ -1,6 +1,6 @@
 {
   "name": "@pefernan/cors-proxy",
-  "version": "0.0.0-development",
+  "version": "0.0.2",
   "description": "Proxy clone and push requests for the browser",
   "main": "index.js",
   "bin": "bin.js",
