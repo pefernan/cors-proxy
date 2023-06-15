@@ -10,16 +10,19 @@ async function service (req, res) {
   middleware(req, res, () => {
     let u = url.parse(req.url, true)
 
+    if (u.pathname === '/ping') {
+      res.setHeader('content-type', 'text/plain')
+      return send(res, 200, "pong")
+    }
+
     if (u.pathname === '/') {
       res.setHeader('content-type', 'text/html')
       let html = `<!DOCTYPE html>
       <html>
         <title>@pefernan/cors-proxy</title>
         <h1>@pefernan/cors-proxy (forked from @isopmorphic-git/cors-proxy)</h1>
-        <p>This is the server software that runs on <a href="https://cors.isomorphic-git.org">https://cors.isomorphic-git.org</a>
-           &ndash; a free service (generously sponsored by <a href="https://www.clever-cloud.com/?utm_source=ref&utm_medium=link&utm_campaign=isomorphic-git">Clever Cloud</a>)
-           for users of <a href="https://isomorphic-git.org">isomorphic-git</a> that enables cloning and pushing repos in the browser.</p>
-        <p>The source code is hosted on Github at <a href="https://github.com/isomorphic-git/cors-proxy">https://github.com/isomorphic-git/cors-proxy</a></p>
+        <p>This is the server software for users of <a href="https://isomorphic-git.org">isomorphic-git</a> that enables cloning and pushing repos in the browser.</p>
+        <p>The source code is hosted on Github at <a href="https://github.com/pefernan/cors-proxy">https://github.com/pefernan/cors-proxy</a></p>
         <p>It can also be installed from npm with <code>npm install <a href="https://npmjs.org/package/${pkg.name}">@pefernan/cors-proxy</a></code></p>
 
         <h2>Terms of Use</h2>
