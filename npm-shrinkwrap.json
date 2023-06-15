@@ -1,12 +1,12 @@
 {
   "name": "@pefernan/cors-proxy",
-  "version": "0.0.0-development",
+  "version": "0.0.3",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
       "name": "@pefernan/cors-proxy",
-      "version": "0.0.0-development",
+      "version": "0.0.3",
       "license": "MIT",
       "dependencies": {
         "cross-env": "^5.2.0",
